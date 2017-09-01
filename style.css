@@ -1,0 +1,105 @@
+html,
+body,
+.cover{
+    height: 100%;
+}
+
+.cover{
+
+	background-image: url('Images/3-d-180d.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    padding: 0 20px;
+    box-shadow: inset 0 0 200px #000;
+}
+
+#cv{
+	font-weight: bold;
+}
+.cover-text{
+    text-align: center;
+    color: black;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Poiret One, cursive;
+}
+
+.cover-text h1{
+    margin: 0;
+    font-size: 65px;
+    letter-spacing: -3px;
+}
+
+.cover-text p{
+    font-size: 25px;
+}
+
+nav.navbar-inverse{
+    background: rgba(0,0,0,0.7);
+    border: none;
+    height: 63px;
+}
+
+.navbar-inverse .navbar-brand {
+    font-family: Poiret One, cursive;
+    font-size: 28px;
+    position: relative;
+    top: 2px;
+}
+
+.form-control{
+	margin-right: 20px;
+	height: 40px;
+	border-radius: 7px;
+	font-size: 15px;
+}
+
+.form-inline{
+	background: rgba(0,0,0,0.7);
+	position: relative;
+	top: 8px;
+}
+
+label{
+	font-size: 20px;
+	background: rgba(0,0,0,0);
+	padding: 8px;
+	border-radius: 10px;
+}
+
+
+input{
+	padding: 10px;
+}
+
+p{
+    font-family: cursive;
+}
+
+#sign{
+	font-weight: bold;
+	font-size: 22px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: Goergia, Times, serif;
+}
+
+@media only screen and (max-width : 560px){
+    .cover{
+        background-attachment: scroll;
+    }
+    .cover-text h1{
+        font-size: 55px;
+    }
+}    

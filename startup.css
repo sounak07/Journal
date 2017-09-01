@@ -1,0 +1,116 @@
+html,
+body,
+.cover{
+    height: 100%;
+}
+
+
+.cover{
+    background-image: url(Images/the_sunrise-1366x768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    padding: 0 20px;
+}
+    box-shadow: inset 0 0 200px #000;
+
+.cover-text{
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Poiret One, cursive;
+}
+
+.cover-text h1{
+    margin: 0;
+    font-size: 70px;
+    letter-spacing: -3px;
+}
+
+.cover-text p{
+    font-size: 25px;
+}
+
+nav.navbar-inverse{
+    background: rgba(0,0,0,0.7);
+    border: none;
+}
+
+.navbar-inverse .navbar-brand {
+    font-family: Poiret One, cursive;
+    font-size: 25px;
+    position: relative;
+    top: 2px;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 5px;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.navbar-inverse .navbar-nav li a:hover{
+    background: #397be5;
+    border-radius: 20px 10px;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #c60d45;
+    border-radius: 10px 20px;
+}
+
+p{
+    font-family: cursive;
+}
+
+/* Extra Things */
+body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: Goergia, Times, serif;
+}
+
+ul li a:hover{
+    color: black;
+}
+
+/* Media queries */
+
+@media only screen and (max-width : 560px){
+    .cover{
+        background-attachment: scroll;
+    }
+    .cover h1{
+        font-size: 40px;
+    }
+    
+    section{
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

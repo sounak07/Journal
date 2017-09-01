@@ -1,0 +1,52 @@
+html,
+body,
+.cover{
+    height: 100%;
+}
+
+.cover{
+
+	background-image: url('Images/Erika%20Sorbo_Spring_YkFjR2BRdw.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    padding: 0 20px;
+    box-shadow: inset 0 0 200px #000;
+}
+
+nav.navbar-inverse{
+    background: rgba(0,0,0,0.7);
+    border: none;
+    height: 55px;
+}
+
+.navbar-inverse .navbar-brand {
+    font-family: Poiret One, cursive;
+    font-size: 28px;
+    position: relative;
+    top: 2px;
+}
+
+
+
+#sign{
+	font-size: 18px;
+    border-radius: 8px;
+}
+
+#toprow{
+    margin-top: 70px;
+}
+
+textarea{
+
+    color: black;
+    font-family: Poiret One, cursive;
+}
+
+@media only screen and (max-width : 560px){
+       
+}       
