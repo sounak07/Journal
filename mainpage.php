@@ -49,6 +49,8 @@
         <div>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="logout.php" id="logout">Log out</a></li>
+
+            <!-- Redirect to logout.php -->
              
           </ul>
         </div><!--/.nav-collapse -->
