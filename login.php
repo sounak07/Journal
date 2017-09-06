@@ -1,9 +1,9 @@
 <?php
 
+	include('connection.php');
+
 	session_start();
 
-	include('connection.php');
-	
 	if(isset($_POST['submit'])) {
 
 		$error = '';
@@ -53,9 +53,11 @@
 
 		    		$_SESSION['id'] = mysqli_insert_id($conn);
 
-		    		print_r($_SESSION);
+		    		//print_r($_SESSION);
 
 		    		//Redirecting to logged in page
+                
+                    echo '<script>window.location.href="mainpage.php"</script>';
 
 		    }
 
@@ -64,19 +66,19 @@
 	}
 
 
-		if(isset($_POST['logsubmit'])){
+	if(isset($_POST['logsubmit'])){
 
-			$query="SELECT * FROM users WHERE email='".mysqli_real_escape_string($conn, $_POST['loginemail'])."' AND password='".md5(md5($_POST['loginemail']).$_POST['loginpassword'])."' LIMIT 1";
+		$query="SELECT * FROM users WHERE email='".mysqli_real_escape_string($conn, $_POST['loginemail'])."' AND password='".md5(md5($_POST['loginemail']).$_POST['loginpassword'])."' LIMIT 1";
 
-			$result = mysqli_query($conn, $query);
+		$result = mysqli_query($conn, $query);
 
-			$row = mysqli_fetch_array($result);
+		$row = mysqli_fetch_array($result);
 
-			if($row) {
+		if($row) {
 
 				$_SESSION['id'] = $row['id'];
 
-				//print_r($_SESSION);
+				echo '<script>window.location.href="mainpage.php"</script>';
 
 				//Redirect to logged in page
 

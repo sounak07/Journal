@@ -1,5 +1,7 @@
 <?php 
 
+    define("TITLE","Privado"); 
+
     session_start();
 
     include('connection.php');
@@ -12,7 +14,7 @@
 
     $diary = $row['diary'];
 
-    define("TITLE","Confessions");
+    
  ?> 
 
 <!DOCTYPE html>
@@ -46,7 +48,8 @@
         </div>
         <div>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#cv">Log out</a></li>
+            <li><a href="logout.php" id="logout">Log out</a></li>
+             
           </ul>
         </div><!--/.nav-collapse -->
       </div>

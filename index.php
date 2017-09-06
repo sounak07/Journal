@@ -1,7 +1,7 @@
 <?php 
-
+    
     include('login.php');
-    define("TITLE","Privado");
+    define("TITLE","Xournal");
  ?> 
 
 <!DOCTYPE html>
@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
-    <title> <?php echo TITLE; ?> </title>
+    <title> <?php echo TITLE; ?></title>
 
     <!-- Bootstrap -->
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Privado</a>
+          <a class="navbar-brand" href="#">Xournal</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -71,10 +71,21 @@
 
                <?php 
 
-                  if(isset($error) && $error != '')
-                  echo '<div class="alert alert-danger">'.addslashes((isset($error))? $error:'').'</div>' ;
-               ?>
+                  if(isset($error) && $error != ''){
+                
+                
+                  echo '<div class="alert alert-danger alert-dismissable fade in">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> <strong>'.addslashes((isset($error))? $error:'').'</strong> </div>' ;
 
+}
+
+               if (isset($_GET['msg']) && $_GET['msg']!=''){     
+
+                   echo '<div class="alert alert-success alert-dismissable fade in"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> <strong>' . base64_decode(urldecode($_GET['msg'])) . '</strong> </div>';
+               
+          }     
+
+   ?>
               <p  id="cv">Interested? Sign up Below!</p>
 
                                     
